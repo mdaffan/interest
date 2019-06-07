@@ -15,6 +15,12 @@ You will also see any lint errors in the console.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
+### `How to run this application`
+### `Step 1`:Clone this repository 
+### `Step 2`:cd into cloned repo
+### `Step 3`:run npm install
+### `Step 4`:run npm start
+
 
 ### `Implementation`
 1.The Slider and the Input Groups are desgined using BootStrap
