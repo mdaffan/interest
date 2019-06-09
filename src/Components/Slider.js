@@ -1,20 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core/styles'
-import Grid from '@material-ui/core/Grid'
-
-const styles = {
-  root: {
-    width: '100%'
-  },
-  slider: {
-    padding: '22px 0px'
-  },
-  text: {
-    textAlign: 'center',
-    fontSize: '25px'
-  }
-}
 
 class SimpleSlider extends React.Component {
   constructor() {
@@ -48,12 +33,10 @@ class SimpleSlider extends React.Component {
   }
 
   render() {
-    const { classes } = this.props
-
     return (
-      <div className={classes.root}>
-        <Grid container spacing={3}>
-          <Grid item xs={6}>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-12 col-md-12">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span className="input-group-text" style={{ marginTop: 40 }}>
@@ -77,8 +60,9 @@ class SimpleSlider extends React.Component {
                 aria-labelledby="label"
               />
             </div>
-          </Grid>
-          <Grid item xs={6}>
+          </div>
+
+          <div className="col-lg-6 col-12 col-md-12">
             <div className="input-group mb-3">
               <div className="input-group-prepend">
                 <span className="input-group-text" style={{ marginTop: 40 }}>
@@ -99,8 +83,11 @@ class SimpleSlider extends React.Component {
                 aria-label="Amount (to the nearest dollar)"
               />
             </div>
-          </Grid>
-          <Grid item xs={6}>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-lg-6 col-12 col-md-12">
             <div className="input-group mb-3">
               <div className="input-group-prepend">
                 <span className="input-group-text" style={{ marginTop: 40 }}>
@@ -114,8 +101,8 @@ class SimpleSlider extends React.Component {
                 readOnly
               />
             </div>
-          </Grid>
-          <Grid item xs={6}>
+          </div>
+          <div className="col-lg-6 col-12 col-md-12">
             <div className="input-group mb-3">
               <div className="input-group-prepend">
                 <span className="input-group-text" style={{ marginTop: 40 }}>
@@ -129,8 +116,8 @@ class SimpleSlider extends React.Component {
                 readOnly
               />
             </div>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </div>
     )
   }
@@ -140,4 +127,4 @@ SimpleSlider.propTypes = {
   classes: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(SimpleSlider)
+export default SimpleSlider
